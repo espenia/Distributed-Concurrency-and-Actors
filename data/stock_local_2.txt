@@ -1,0 +1,4 @@
+id_producto, stock
+1,40
+2,60
+3,20

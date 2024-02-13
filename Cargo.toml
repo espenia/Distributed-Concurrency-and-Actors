@@ -1,0 +1,27 @@
+[package]
+name = "donotunwrap"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "local"
+path = "src/local_main.rs"
+
+[[bin]]
+name = "e-commerce"
+path = "src/ecommerce.rs"
+
+[dependencies]
+rand = "0.8.5"
+std-semaphore = "0.1"
+tokio = { version = "^1", features = ["full"] }
+quote = "1.0.27"
+tokio-util = { version = "0.7.8", features = ["net"] }
+actix = "0.13.0"
+actix-rt = "2.0" # <-- Runtime for actix
+csv = "1.1"
+serde_json = "1.0.108"
+serde =  { version = "1.0.192", features = ["derive"] }
+futures = "0.3.15"
